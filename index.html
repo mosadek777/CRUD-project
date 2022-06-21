@@ -1,0 +1,79 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+    <title></title>
+</head>
+<body>
+    <div class="container my-3">
+        <h1 class="text-center">Crud Project</h1>
+        <div class="form-inputs">
+            <div class="input-gb mb-3">
+                <label for="">product Name</label>
+                <input type="text" class="form-control " placeholder="type your product Name" id="productNameInput">
+                <div id="nameAlert" class="alert alert-danger d-none">you must start with capital letter followed with 2 to 8 small letters</div>
+          
+            </div>
+
+            <div class="input-gb mb-3">
+                <label for="">product Price</label>
+                <input type="number" class="form-control" placeholder="type your product price" id="productPriceInput">
+                <div id="priceAlert" class="alert alert-danger d-none">you must start from 1000 to 10000</div>
+          
+            </div>
+
+            <div class="input-gb mb-3">
+                <label for="">product Category</label>
+                <input type="text" class="form-control" placeholder="type your product Category" id="productCategoryInput">
+                <div id="categoryAlert" class="alert alert-danger d-none">you must start  with 2 to 8 small letters</div>
+          
+            </div>
+
+            <div class="input-gb mb-3">
+                <label for="">product Description</label>
+                <textarea name="" id="productDescInput" placeholder="type your Description" class="form-control "></textarea>
+                <div id="descriptionAlert" class="alert alert-danger d-none">you must start  with 2 to 20 small letters</div>
+          
+            </div>
+            <p class="text-danger text-center fa-beat-fade fs-5 my-3 mx-5 font-weight-bold  d-none" id="inputsAlert">All Inputs Are Required</p>
+            <button class="btn btn-dark" id="submitBtn">Add Product</button>
+        </div>
+
+
+        <div class="Data my-5">
+
+            <table class="table table-striped">
+                <thead>
+                    
+                        <th>index</th>
+                        <th>name</th>
+                        <th>price</th>
+                        <th>category</th>
+                        <th>Description</th>
+                        <th>update</th>
+                        <th>delete</th>
+                </thead>
+                <tbody id="tableData">
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>

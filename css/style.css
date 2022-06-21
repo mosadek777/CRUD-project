@@ -1,0 +1,13 @@
+#productDescInput
+{
+    resize: none;
+}
+::placeholder
+{
+    font-size: 1.1 rem;
+}
+body
+{
+    font-family: 'Tajawal', sans-serif;
+    background-color: #D8B2C6;
+}
